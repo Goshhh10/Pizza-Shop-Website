@@ -1,0 +1,75 @@
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.s-box {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.s-box:hover {
+  transform: translateY(-10px);
+}
+
+.s-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.s-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.s-box p {
+  line-height: 1.6;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.connect {
+  margin-top: 4rem;
+  background-color: var(--light-gray);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.connect-text span {
+  color: var(--main-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.connect-text h2 {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .connect {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
